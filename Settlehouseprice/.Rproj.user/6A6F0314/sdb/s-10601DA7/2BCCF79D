@@ -1,0 +1,17 @@
+{
+    "contents" : "library(shiny)\nlibrary(datasets)\n\nvars <- colnames(houseprice)\n\nmock <- data.frame(v1 = c(    1,    2,    NA,   9,   NaN,   7 ),\n                   v2 = c(  \"a\",  \"b\",   \"c\", \"d\",   \"e\",  NA ),\n                   v3 = c( TRUE, TRUE, FALSE,  NA, FALSE, TRUE)) \nrow.names(mock) <- c(\"uno\", \"dos\", \"tres\", \"cuatro\", \"cinco\", \"seis\")\n\n\nfunction(input, output, session) {\n  \n  source(\"table1.R\", local=TRUE)\n  source(\"table2.R\", local = TRUE)\n  source(\"table3.R\", local = TRUE)\n  source(\"table4.R\", local = TRUE)\n}\n",
+    "created" : 1482889393145.000,
+    "dirty" : false,
+    "encoding" : "BIG5",
+    "folds" : "",
+    "hash" : "1285144920",
+    "id" : "2BCCF79D",
+    "lastKnownWriteTime" : 1482893841,
+    "path" : "~/Desktop/NTU_R/houseprice/server.R",
+    "project_path" : "server.R",
+    "properties" : {
+    },
+    "relative_order" : 2,
+    "source_on_save" : false,
+    "type" : "r_source"
+}
